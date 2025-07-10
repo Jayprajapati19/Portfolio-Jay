@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 const inter = Inter({ subsets: ["latin"] });
 import "react-toastify/dist/ReactToastify.css";
 import Chatbot from "../components/Chatbot";
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -75,6 +76,7 @@ export default function RootLayout({ children }) {
         </div>
         <Footer />
         <Chatbot />
+        <Analytics />
       </body>
     </html>
   );
