@@ -59,7 +59,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-5 mt-10 lg:self-center sm:gap-4 sm:mt-6">
                   <Link
-                    href="/jay_resume.pdf"
+                    href="/Jay_resume.pdf"
                     target="_black"
                     className="flex items-center bg-dark text-light p-2.5 px-6 text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-dark hover:border-dark duration-200 dark:hover:bg-dark dark:border-light dark:bg-light dark:text-dark dark:hover:text-light md:p-2 md:px-4 md:text-base sm:text-sm rounded-lg"
                   >

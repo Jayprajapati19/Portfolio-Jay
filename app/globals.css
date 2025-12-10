@@ -58,10 +58,11 @@
 }
 
 ::-webkit-scrollbar-button {
-  display: none; /* Remove the scrollbar buttons (arrows) */
+  display: none;
+  /* Remove the scrollbar buttons (arrows) */
 }
 
-.ai-chat::-webkit-scrollbar{
+.ai-chat::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }

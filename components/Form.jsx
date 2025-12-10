@@ -13,7 +13,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 const Form = ({ className }) => {
-  const deleteProduct = async () => {};
+  const deleteProduct = async () => { };
   const {
     register,
     handleSubmit,
