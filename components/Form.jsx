@@ -140,7 +140,7 @@ const Form = ({ className }) => {
         {!className && (
           <div className="flex flex-col gap-4 mt-10 items-center justify-center text-[18px] sm:text-[14px]">
             <Link
-              href="https://www.linkedin.com/in/jay-prajapati-/"
+              href="https://www.linkedin.com/in/jay-prajapati-cs2027"
               target="_blank"
               className="w-[60%] md:w-[80%] sm:w-full py-2 rounded-lg text-white bg-blue-400 flex items-center justify-center gap-2 hover:scale-105 duration-300 hover:shadow-2xl"
             >

@@ -116,7 +116,7 @@ const Navbar = () => {
             <GithubIcon />
           </MotionLink>
           <MotionLink
-            href="https://www.linkedin.com/in/jay-prajapati-/"
+            href="https://www.linkedin.com/in/jay-prajapati-cs2027"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             target="_blank"
@@ -198,7 +198,7 @@ const Navbar = () => {
               <GithubIcon />
             </MotionLink>
             <MotionLink
-              href="https://www.linkedin.com/in/jay-prajapati-/"
+              href="https://www.linkedin.com/in/jay-prajapati-cs2027/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               target="_blank"

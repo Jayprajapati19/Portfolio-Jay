@@ -120,5 +120,4 @@ const MobileTechnologies = () => {
     </div >
   )
 }
-
 export default MobileTechnologies
