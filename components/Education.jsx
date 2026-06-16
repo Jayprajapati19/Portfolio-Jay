@@ -65,16 +65,16 @@ const Education = () => {
 
           <Details
             type="Diploma in Information Technology"
-            time="2021-2024"
+            time="Jun 2021 - May 2024"
             place="R.C Technical Institute"
-            info="Currently pursuing a Diploma in Information Technology (2021–2024), gaining both theoretical insights and hands-on experience in the ever-evolving tech landscape. This program is shaping my understanding of core IT principles while preparing me with practical skills for a dynamic and future-focused career in technology."
+            info="Completed a Diploma in Information Technology with a CGPA of 7.65, gaining hands-on experience in programming, databases, web development, and core IT fundamentals."
           />
 
           <Details
             type="Bachelor of Engineering in Computer Science & Engineering (B.Tech. CSE)"
-            time="2024-2027"
-            place="Government Engineering Collage Patan (GTU)"
-            info="Currently enrolled in the B.E. program in Computer Science & Engineering at Government Engineering College Patan, where I’m building a strong technical foundation with a focus on modern technologies and innovation. The curriculum is enhancing my understanding of programming, system design, data structures, and cutting-edge areas like AI and machine learning. I’m eager to keep expanding my skills and contribute to impactful solutions in today’s evolving tech landscape."
+            time="Jun 2024 - Present"
+            place="Government Engineering College Patan (GTU)"
+            info="Currently pursuing Computer Science Engineering, building stronger foundations in data structures, system design, software engineering, and modern application development."
           />
         </ul>
       </div>

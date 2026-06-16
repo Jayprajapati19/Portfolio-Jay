@@ -65,7 +65,7 @@ const Form = ({ className }) => {
       <form className="w-[60%] lg:w-[80%] sm:w-full">
         <AnimatedText
           className="py-5 text-left text-7xl lg:text-5xl xs:text-3xl"
-          text="Let's Talk!! 🤝"
+          text="Let's Talk!!"
         />
         <div className="flex flex-col gap-5 xs:text-[13px] dark:text-white">
           <div className="grid items-center justify-center grid-cols-2 gap-3 md:grid-cols-1">

@@ -12,6 +12,8 @@ import uber from "../../public/uber.jpeg";
 
 import linksta from "../../public/linksta.png";
 import expenseTrack from "../../public/expense-track.png";
+import autoclaw from "../../public/autoclaw.png";
+import urlShortener from "../../public/url_short.png";
 import ArticlesPage from "../../components/ArticlesPage";
 import TransitionEffect from "../../components/TransitionEffect";
 export const metadata = {
@@ -21,12 +23,12 @@ export const metadata = {
 
 const FeaturedProjects = ({ type, link, title, summary, img, github }) => {
   return (
-    <article className="relative flex items-center justify-between w-full p-12 border border-solid shadow-2xl rounded-br-2xl rounded-3xl border-dark bg-light dark:bg-dark dark:border-light dark:text-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]" />
+    <article className="relative flex items-center justify-between w-full p-12 border border-solid shadow-2xl shadow-dark/10 rounded-br-2xl rounded-3xl border-dark bg-gradient-to-br from-light via-white to-orange-50/70 dark:from-dark dark:via-dark dark:to-slate-900 dark:border-light dark:text-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-gradient-to-br from-dark via-orange-500 to-dark dark:from-light dark:via-secondary dark:to-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 overflow-hidden rounded-lg cursor-pointer lg:w-full"
+        className="w-1/2 overflow-hidden rounded-lg cursor-pointer ring-1 ring-dark/10 dark:ring-light/10 lg:w-full"
       >
         <Image
           src={img}
@@ -71,12 +73,12 @@ const FeaturedProjects = ({ type, link, title, summary, img, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="relative flex flex-col items-center justify-center w-full gap-4 p-4 border border-solid shadow-2xl rounded-3xl rounded-br-2xl border-dark bg-light dark:bg-dark dark:border-light dark:text-light xs:p-4">
-      <div className="absolute top-1 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%]  md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
+    <article className="relative flex flex-col items-center justify-center w-full gap-4 p-4 border border-solid shadow-2xl shadow-dark/10 rounded-3xl rounded-br-2xl border-dark bg-gradient-to-br from-light via-white to-orange-50/70 dark:from-dark dark:via-dark dark:to-slate-900 dark:border-light dark:text-light xs:p-4">
+      <div className="absolute top-1 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-gradient-to-br from-dark via-orange-500 to-dark dark:from-light dark:via-secondary dark:to-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%]  md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
-        className="w-full overflow-hidden rounded-lg cursor-pointer"
+        className="w-full overflow-hidden rounded-lg cursor-pointer ring-1 ring-dark/10 dark:ring-light/10"
       >
         <Image
           src={img}
@@ -120,14 +122,14 @@ const page = () => {
         <Layout className="pt-16 md:pt-8 sm:pd-4 xs:pt-2">
           <AnimatedText
             className="py-8 lg:text-7xl sm:text-6xl xs:text-4xl"
-            text="Imagination trumphs Knowledge !"
+            text="Imagination triumphs Knowledge !"
           />
 
           <div className="grid grid-cols-12 gap-24 mb-10 xl:gap-x-16 lg:gap-x-8 sm:gap-x-0 md:gap-y-16">
             <div className="col-span-12">
               <FeaturedProjects
                 title="IMAGESHELL"
-                summary="secure and scalable image hosting platform with seamless uploads."
+                summary="Secure and scalable image hosting platform built with Next.js, TypeScript, MongoDB, NextAuth, Razorpay subscriptions, RBAC, REST APIs, and ImageKit-powered delivery."
                 link="https://image-shell.vercel.app/"
                 type="Featured Project"
                 img={project1}
@@ -138,7 +140,7 @@ const page = () => {
             <div className="col-span-12">
               <FeaturedProjects
                 title="ONLINE INTERVIEW VIDEO CALLING"
-                summary="Built a video conferencing app with screen sharing, recording, and real-time messaging."
+                summary="Real-time interview platform with WebRTC video calls, chat, screen sharing, recording, Clerk authentication, role-based sessions, Stream API messaging, and reconnection handling."
                 link="https://video-calling-interview.vercel.app/"
                 type="Featured Project"
                 img={pro2}
@@ -153,6 +155,28 @@ const page = () => {
                 type="Featured Project"
                 img={pro3}
                 github="https://github.com/Jayprajapati19/chatapp"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProjects
+                title="AutoClaw"
+                summary="Multi-channel AI agent platform built with TypeScript, Bun, and OpenRouter. It supports CLI and Telegram workflows, Agent, Plan, and Ask modes, Firecrawl integration, retry handling, local caching, and faster task execution."
+                link="https://github.com/Jayprajapati19/AutoClaw"
+                type="Featured Project"
+                img={autoclaw}
+                github="https://github.com/Jayprajapati19/AutoClaw"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProjects
+                title="URL Shortener"
+                summary="A clean URL shortening application focused on fast link creation, simple link management, and shareable short URLs. Built as a practical full-stack utility with a polished interface and reliable routing flow."
+                link="https://github.com/Jayprajapati19/URL-Shortener"
+                type="Featured Project"
+                img={urlShortener}
+                github="https://github.com/Jayprajapati19/URL-Shortener"
               />
             </div>
 

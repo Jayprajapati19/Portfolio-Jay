@@ -26,7 +26,7 @@ const MobileTechnologies = () => {
 
   return (
     <div className='mt-[150px] sm:mt-[200px] xs:mt-[100px] relative mb-10 hidden sm:block rounded-xl py-10 px-4 dark:bg-gradient-to-br from-slate-700 to-gray-800 shadow-2xl outline-none'>
-      <h2 className='uppercase w-full text-center text-yellow-600 font-semibold text-xl sm:text-base'>Tech i have worked on</h2>
+      <h2 className='uppercase w-full text-center text-yellow-600 font-semibold text-xl sm:text-base'>Tech I have worked on</h2>
 
       <AnimatedText text="My Cards" className="uppercase sm:text-4xl" />
       {/* <div className={styles.logos}>
@@ -114,6 +114,22 @@ const MobileTechnologies = () => {
         <SwiperSlide className=' !flex !items-center !justify-center flex-col font-semibold gap-5 w-full h-full rounded-3xl bg-gradient-to-br from-red-500 to-gray-900 dark:to-orange-950 text-white'>
           <Image alt="TechImg" src={java} className='w-[10vh] h-auto' />
           <h2>Java</h2>
+        </SwiperSlide>
+        <SwiperSlide className=' !flex !items-center !justify-center flex-col font-semibold gap-5 w-full h-full rounded-3xl bg-gradient-to-br from-sky-600 to-blue-900 text-white'>
+          <h2 className='text-4xl'>TS</h2>
+          <h2>TypeScript</h2>
+        </SwiperSlide>
+        <SwiperSlide className=' !flex !items-center !justify-center flex-col font-semibold gap-5 w-full h-full rounded-3xl bg-gradient-to-br from-cyan-600 to-slate-900 text-white'>
+          <h2 className='text-4xl'>API</h2>
+          <h2>REST APIs</h2>
+        </SwiperSlide>
+        <SwiperSlide className=' !flex !items-center !justify-center flex-col font-semibold gap-5 w-full h-full rounded-3xl bg-gradient-to-br from-violet-600 to-gray-950 text-white'>
+          <h2 className='text-4xl'>AI</h2>
+          <h2>AI Apps</h2>
+        </SwiperSlide>
+        <SwiperSlide className=' !flex !items-center !justify-center flex-col font-semibold gap-5 w-full h-full rounded-3xl bg-gradient-to-br from-emerald-600 to-gray-950 text-white'>
+          <h2 className='text-4xl'>DB</h2>
+          <h2>MongoDB / Redis</h2>
         </SwiperSlide>
       </Swiper>
 

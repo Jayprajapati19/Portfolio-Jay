@@ -30,7 +30,8 @@ const Details = ({
           {position}&nbsp;
           <a
             className="capitalize text-primary dark:text-secondary"
-            target="_black"
+            target="_blank"
+            rel="noopener noreferrer"
             href={companyLink}
           >
             @{company}
@@ -69,12 +70,30 @@ const Experience = () => {
 
         <ul className="flex flex-col items-start justify-between w-full ml-4 xs:ml-6 ">
           <Details
-            position="Web developer Intern"
+            position="Backend Developer Intern"
+            company="Arupa AI"
+            time="March 2026 - May 2026"
+            companyLink="#"
+            address="Remote"
+            work="Built scalable backend services using NestJS and developed RESTful APIs for AI-powered applications.Integrated real-time AI APIs and asynchronous workflows to improve response speed and system reliability."
+          />
+          
+          <Details
+            position="MERN Stack Developer Intern"
+            company="SkyAim Digitech"
+            time="Dec 2025 - Feb 2026"
+            companyLink="#"
+            address="Remote"
+            work="Developed and deployed an end-to-end student community and resource management platform using the MERN stack.Built RESTful APIs, authentication systems, CRUD operations, and real-time features to support seamless user engagement"
+          />
+
+          <Details
+            position="Web Developer Intern"
             company="Elsner Technology"
             time="2023"
             companyLink="http://www.elsner.com/"
             address="Shivranjani, Ahmedabad, IND"
-            work="Worked with a team responsible for creating a web-app transorming form applications. Added auto-fill features and integrated  frontend while developing the project on React js"
+            work="Worked with a team responsible for creating a web-app transforming form applications. Added auto-fill features and integrated frontend while developing the project on React JS."
           />
         </ul>
       </div>

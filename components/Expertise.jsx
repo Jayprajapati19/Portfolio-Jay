@@ -7,6 +7,7 @@ import img1 from "../public/half-circle.png";
 import webDev2 from "../public/service-icon3.png";
 import webDesign from "../public/service-icon2.png";
 import seo from "../public/service-icon4.png";
+import aiBackend from "../public/service-icon1.png";
 
 const Expertise = () => {
   return (
@@ -33,7 +34,7 @@ const Expertise = () => {
             </figure>
             <div className="flex flex-col gap-5 w-[80%] md:w-full justify-center items-center ">
               <h1 className="relative w-full text-lg font-semibold text-left md:text-center">
-                <span>🌐 Web Development</span>
+                <span>Web Development</span>
                 <span
                   className={`md:hidden h-[1px] flex absolute left-0 -bottom-0.5  bg-dark w-0 group-hover:w-[50%] transition-[width] ease duration-500 dark:bg-white`}
                 >
@@ -41,8 +42,9 @@ const Expertise = () => {
                 </span>
               </h1>
               <p className="text-sm font-light text-left md:text-center">
-                Creating modern web apps with robust performance, flexibility,
-                and scalable frameworks.
+                Creating full-stack MERN and Next.js applications with
+                authentication, REST APIs, real-time features, and scalable
+                deployment patterns.
               </p>
             </div>
           </div>
@@ -57,7 +59,7 @@ const Expertise = () => {
             </figure>
             <div className="flex flex-col gap-5 w-[80%] md:w-full justify-center items-center ">
               <h1 className="relative w-full text-lg font-semibold text-left md:text-center">
-                <span>🎨 Web Designing</span>
+                <span>Web Designing</span>
                 <span
                   className={`md:hidden h-[1px] inline-block absolute left-0 -bottom-0.5  bg-dark w-0 group-hover:w-[50%] transition-[width] ease duration-500 dark:bg-white`}
                 >
@@ -66,8 +68,8 @@ const Expertise = () => {
               </h1>
 
               <p className="text-sm font-light text-left md:text-center">
-                Designing immersive, user-friendly interfaces that combine
-                beauty with seamless interaction.
+                Designing responsive, user-friendly interfaces that feel clean,
+                fast, and practical across desktop and mobile screens.
               </p>
             </div>
           </div>
@@ -82,7 +84,7 @@ const Expertise = () => {
             </figure>
             <div className="flex flex-col gap-5 w-[80%] md:w-full justify-center items-center ">
               <h1 className="relative w-full text-lg font-semibold text-left md:text-center">
-                <span>📈 SEO Optimization</span>
+                <span>SEO Optimization</span>
                 <span
                   className={`md:hidden h-[1px] inline-block absolute left-0 -bottom-0.5  bg-dark w-0 group-hover:w-[50%] transition-[width] ease duration-500 dark:bg-white`}
                 >
@@ -93,6 +95,31 @@ const Expertise = () => {
               <p className="text-sm font-light text-left md:text-center">
                 Fueling online growth with keyword-rich strategies and content
                 that drives organic traffic.
+              </p>
+            </div>
+          </div>
+          <div className=" h-max py-5  flex items-center text-center  w-full p-4 bg-light border border-solid border-dark rounded-2xl relative dark:bg-dark dark:border-light dark:text-light gap-5 md:flex-col md:h-max md:gap-2 group cursor-pointer xs:w-[90%]">
+            <div className="absolute top-1 -right-2 -z-10 w-[101%] h-[101%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-2xl rounded-tr-2xl" />
+            <figure className="mb-0 md:h-1/4 md:w-auto w-[20%] h-auto p-4 flex items-center justify-center bg-gray-200 rounded-full ">
+              <Image
+                alt="AI Backend Img"
+                src={aiBackend}
+                className="w-full h-auto p-2 duration-300 ease-out delay-150 group-hover:-translate-y-2 group-hover:transition"
+              />
+            </figure>
+            <div className="flex flex-col gap-5 w-[80%] md:w-full justify-center items-center ">
+              <h1 className="relative w-full text-lg font-semibold text-left md:text-center">
+                <span>AI Backend Systems</span>
+                <span
+                  className={`md:hidden h-[1px] inline-block absolute left-0 -bottom-0.5  bg-dark w-0 group-hover:w-[50%] transition-[width] ease duration-500 dark:bg-white`}
+                >
+                  &nbsp;
+                </span>
+              </h1>
+
+              <p className="text-sm font-light text-left md:text-center">
+                Building AI-powered APIs, agent workflows, async services, and
+                integrations with tools like OpenRouter, Gemini, and Firecrawl.
               </p>
             </div>
           </div>
