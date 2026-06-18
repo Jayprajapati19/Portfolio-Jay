@@ -37,10 +37,12 @@ const Details = ({
             @{company}
           </a>
         </h3>
-        <span className="font-medium capitalize text-dark/75 xs:text-sm">
+        <span className="inline-block w-fit max-w-full whitespace-normal rounded-md border border-orange-500/25 bg-orange-50 px-3 py-1.5 text-sm font-semibold leading-5 text-dark shadow-sm dark:border-secondary/30 dark:bg-secondary/10 dark:text-light xs:text-xs">
           {time} | {address}
         </span>
-        <p className="w-full font-medium md:text-sm">{work}</p>
+        <p className="w-full font-medium leading-7 text-dark/80 dark:text-light/80 md:text-sm">
+          {work}
+        </p>
       </motion.div>
     </li>
   );
@@ -75,7 +77,7 @@ const Experience = () => {
             time="March 2026 - May 2026"
             companyLink="#"
             address="Remote"
-            work="Built scalable backend services using NestJS and developed RESTful APIs for AI-powered applications.Integrated real-time AI APIs and asynchronous workflows to improve response speed and system reliability."
+            work="Built scalable backend services using NestJS and developed RESTful APIs for AI-powered applications. Integrated real-time AI APIs and asynchronous workflows to improve response speed and system reliability."
           />
           
           <Details
@@ -84,13 +86,13 @@ const Experience = () => {
             time="Dec 2025 - Feb 2026"
             companyLink="#"
             address="Remote"
-            work="Developed and deployed an end-to-end student community and resource management platform using the MERN stack.Built RESTful APIs, authentication systems, CRUD operations, and real-time features to support seamless user engagement"
+            work="Developed and deployed an end-to-end student community and resource management platform using the MERN stack. Built RESTful APIs, authentication systems, CRUD operations, and real-time features to support seamless user engagement."
           />
 
           <Details
             position="Web Developer Intern"
             company="Elsner Technology"
-            time="2023"
+            time="2024"
             companyLink="http://www.elsner.com/"
             address="Shivranjani, Ahmedabad, IND"
             work="Worked with a team responsible for creating a web-app transforming form applications. Added auto-fill features and integrated frontend while developing the project on React JS."

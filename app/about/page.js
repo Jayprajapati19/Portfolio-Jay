@@ -32,27 +32,27 @@ const page = () => {
       >
         <Layout className="min-h-screen pt-16">
           <AnimatedText
-            text="Passion fuels Purpose !"
+            text="Building useful software with care"
             className="mb-16 text-6xl md:text-5xl xs:text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 ">
-            <div className="flex flex-col items-start justify-start col-span-3 mt-5 xl:col-span-4 md:order-2 md:col-span-8 rounded-2xl border border-dark/10 bg-white/70 p-6 shadow-lg backdrop-blur-sm dark:border-light/10 dark:bg-light/5">
+            <div className="flex flex-col items-start justify-start col-span-3 mt-5 xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase dark:text-light/75 text-dark/75">
                 Biography
               </h2>
-              <p>
+              <p className="text-lg font-medium leading-8 text-dark/85 dark:text-light/85 md:text-base">
                 I'm Jay Prajapati, a full-stack developer who likes building
                 useful products from the API layer to the final interface. My
                 work sits around MERN, Next.js, TypeScript, and AI-powered
                 systems where reliability and user experience both matter.
               </p>
-              <p className="my-4">
+              <p className="my-4 text-lg font-medium leading-8 text-dark/85 dark:text-light/85 md:text-base">
                 Recently, I have worked as a Backend Developer Intern at Arupa
                 AI and as a MERN Stack Developer Intern at SkyAim Digitech,
                 building REST APIs, authentication flows, real-time features,
                 scheduling integrations, and deployable production systems.
               </p>
-              <p>
+              <p className="text-lg font-medium leading-8 text-dark/85 dark:text-light/85 md:text-base">
                 I learn best by shipping. Projects like ImageShell, an online
                 interview platform, AI chat tools, and AutoClaw have helped me
                 sharpen the practical parts of engineering: choosing the right
@@ -90,7 +90,7 @@ const page = () => {
                   <AnimatedNumbers value={1} decimal={0} />
                 </span>
                 <h2 className="text-xl font-medium capitalize dark:text-light/75 text-dark/75 xl:text-center md:text-lg sm:text-base xs:text-sm ">
-                  Years of Experience
+                  Year of Experience
                 </h2>
               </div>
             </div>

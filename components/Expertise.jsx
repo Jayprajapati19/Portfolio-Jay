@@ -15,7 +15,7 @@ const Expertise = () => {
       <h2 className="w-full text-xl font-semibold text-center text-yellow-600 uppercase">
         What I do
       </h2>
-      <AnimatedText text="My Expertise" className="uppercase sm:text-4xl" />
+      <AnimatedText text="How I can help" className="uppercase sm:text-4xl" />
       <Image
         alt="Design"
         src={img1}
@@ -59,7 +59,7 @@ const Expertise = () => {
             </figure>
             <div className="flex flex-col gap-5 w-[80%] md:w-full justify-center items-center ">
               <h1 className="relative w-full text-lg font-semibold text-left md:text-center">
-                <span>Web Designing</span>
+                <span>Interface Design</span>
                 <span
                   className={`md:hidden h-[1px] inline-block absolute left-0 -bottom-0.5  bg-dark w-0 group-hover:w-[50%] transition-[width] ease duration-500 dark:bg-white`}
                 >
@@ -68,8 +68,8 @@ const Expertise = () => {
               </h1>
 
               <p className="text-sm font-light text-left md:text-center">
-                Designing responsive, user-friendly interfaces that feel clean,
-                fast, and practical across desktop and mobile screens.
+                Designing responsive interfaces that feel clean, fast, and
+                practical across desktop and mobile screens.
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Expertise = () => {
             </figure>
             <div className="flex flex-col gap-5 w-[80%] md:w-full justify-center items-center ">
               <h1 className="relative w-full text-lg font-semibold text-left md:text-center">
-                <span>SEO Optimization</span>
+                <span>Product Polish</span>
                 <span
                   className={`md:hidden h-[1px] inline-block absolute left-0 -bottom-0.5  bg-dark w-0 group-hover:w-[50%] transition-[width] ease duration-500 dark:bg-white`}
                 >
@@ -93,8 +93,8 @@ const Expertise = () => {
               </h1>
 
               <p className="text-sm font-light text-left md:text-center">
-                Fueling online growth with keyword-rich strategies and content
-                that drives organic traffic.
+                Improving page structure, content clarity, loading feel, and
+                small UX details that make products easier to trust.
               </p>
             </div>
           </div>

@@ -26,9 +26,9 @@ const MobileTechnologies = () => {
 
   return (
     <div className='mt-[150px] sm:mt-[200px] xs:mt-[100px] relative mb-10 hidden sm:block rounded-xl py-10 px-4 dark:bg-gradient-to-br from-slate-700 to-gray-800 shadow-2xl outline-none'>
-      <h2 className='uppercase w-full text-center text-yellow-600 font-semibold text-xl sm:text-base'>Tech I have worked on</h2>
+      <h2 className='uppercase w-full text-center text-yellow-600 font-semibold text-xl sm:text-base'>Technologies I use</h2>
 
-      <AnimatedText text="My Cards" className="uppercase sm:text-4xl" />
+      <AnimatedText text="My Stack" className="uppercase sm:text-4xl" />
       {/* <div className={styles.logos}>
         <div className={styles.logos_slide}>
           <Image src={tailwind} />

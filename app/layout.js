@@ -16,29 +16,15 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Portfolio | Jay Prajapati",
-  description: "This is my portfolio website where you can find all my projects.",
+  description:
+    "Jay Prajapati's portfolio of full-stack, backend, and AI-powered web projects.",
 };
 
 export default function RootLayout({ children }) {
-  // const mouseMove = () => {
-  //   const cursorDot = document.querySelector("[data-cursor-dot]")
-  //   const cursorOutline = document.querySelector("[data-cursor-outline]")
-
-  //   window.addEventListener("mousemove", function (e) {
-  //     const posX = e.clientX
-  //     const posY = e.clientY
-
-  //     cursorDot.style.left = `${posX}px`
-  //     cursorDot.style.top = `${posY}px`
-
-  //     cursorOutline.style.left = `${posX}px`
-  //     cursorOutline.style.top = `${posY}px`
-  //   })
-  // }
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${montserrat.variable} bg-light dark:bg-dark  min-h-screen w-full font-mont  relative`}
+        className={`${inter.className} ${montserrat.variable} bg-light dark:bg-dark min-h-screen w-full font-mont relative`}
       >
         <ToastContainer
           position="top-right"
@@ -53,15 +39,14 @@ export default function RootLayout({ children }) {
           theme="light"
         />
         <Navbar />
-        {/* <CursorEffect /> */}
         {children}
-        <div className="flex h-full md:flex-col mt-32  xs:gap-5 lg:gap-5 sm:mt-10 font-mont px-24 lg:px-16 md:px-12 sm:px-8 xs:px-6 mb-20 md:items-center xs:mt-[60px]">
+        <div className="flex h-full md:flex-col mt-32 gap-8 xs:gap-5 lg:gap-5 sm:mt-10 font-mont px-24 lg:px-16 md:px-12 sm:px-8 xs:px-6 mb-20 md:items-center xs:mt-[60px]">
           <div className="flex-col w-full gap-5 xs:gap-2 md:items-center md:justify-center">
             <h1 className="lg:text-4xl text-dark dark:text-light font-bold xs:text-center capitalize text-5xl mb-5 sm:mb-5 md:text-center sm:text-lg xs:text-[22px]">
-              how about some Music? 😉
+              A little music while you explore
             </h1>
             <h3 className="text-xl font-semibold text-left text-yellow-600 xs:text-center md:text-center sm:text-sm">
-              Let the music play while you explore !
+              A small playlist from my everyday coding flow.
             </h3>
           </div>
           <div className="w-1/2 sm:w-full">

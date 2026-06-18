@@ -13,11 +13,9 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 const Form = ({ className }) => {
-  const deleteProduct = async () => { };
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
@@ -33,8 +31,8 @@ const Form = ({ className }) => {
         progress: undefined,
         theme: "light",
       });
-      const formData = await axios.post("/api/contact", data);
-      toast.success("Message Sent Successfully", {
+      await axios.post("/api/contact", data);
+      toast.success("Message sent successfully", {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -45,7 +43,7 @@ const Form = ({ className }) => {
         theme: "light",
       });
     } catch (error) {
-      toast.error("Oops! We are on maintenance", {
+      toast.error("Something went wrong. Please try email instead.", {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -62,11 +60,19 @@ const Form = ({ className }) => {
     <Layout
       className={`pt-16 min-h-screen flex justify-center ${className} w-full`}
     >
-      <form className="w-[60%] lg:w-[80%] sm:w-full">
+      <form
+        className="w-[60%] lg:w-[80%] sm:w-full"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <AnimatedText
           className="py-5 text-left text-7xl lg:text-5xl xs:text-3xl"
-          text="Let's Talk!!"
+          text="Let's build something useful"
         />
+        <p className="mb-8 text-lg font-medium leading-8 text-dark/75 dark:text-light/75 md:text-base">
+          Have an opportunity, project idea, internship, freelance work, or a
+          technical conversation in mind? Send a message and I will get back to
+          you as soon as I can.
+        </p>
         <div className="flex flex-col gap-5 xs:text-[13px] dark:text-white">
           <div className="grid items-center justify-center grid-cols-2 gap-3 md:grid-cols-1">
             <div className="flex flex-col gap-1">
@@ -76,8 +82,8 @@ const Form = ({ className }) => {
               <input
                 name="name"
                 id="name"
-                placeholder="Your Name"
-                {...register("name")}
+                placeholder="Your name"
+                {...register("name", { required: true })}
                 className=""
               />
             </div>
@@ -88,7 +94,7 @@ const Form = ({ className }) => {
               <input
                 name="email"
                 id="email"
-                placeholder="Your email"
+                placeholder="your.email@example.com"
                 {...register("email", { required: true })}
               />
             </div>
@@ -102,23 +108,34 @@ const Form = ({ className }) => {
                 name="message"
                 rows={5}
                 id="message"
-                {...register("message")}
-                placeholder="Your Message"
+                {...register("message", { required: true })}
+                placeholder="Tell me what you want to build or discuss"
                 className="w-full"
               />
             </div>
           </div>
-          {errors.name && <span>This field is required</span>}
-          {errors.email && <span>This field is required</span>}
-          {errors.message && <span>This field is required</span>}
+          {errors.name && (
+            <span className="text-sm font-semibold text-red-500">
+              Please enter your name.
+            </span>
+          )}
+          {errors.email && (
+            <span className="text-sm font-semibold text-red-500">
+              Please enter your email.
+            </span>
+          )}
+          {errors.message && (
+            <span className="text-sm font-semibold text-red-500">
+              Please add a short message.
+            </span>
+          )}
           <div className="flex items-center justify-center w-full mt-5 sm:mt-0">
             <button
-              onClick={handleSubmit(onSubmit)}
               type="submit"
               className="w-[60%] md:w-[80%] sm:w-full flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-dark hover:border-dark duration-200 dark:hover:bg-dark dark:border-light dark:bg-light dark:text-dark dark:hover:text-light md:p-2 md:px-4 md:text-base sm:text-sm cursor-pointer"
             >
               <div className="flex items-center justify-center w-full gap-2 ">
-                <span>Just Send</span>
+                <span>Send message</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -144,7 +161,7 @@ const Form = ({ className }) => {
               target="_blank"
               className="w-[60%] md:w-[80%] sm:w-full py-2 rounded-lg text-white bg-blue-400 flex items-center justify-center gap-2 hover:scale-105 duration-300 hover:shadow-2xl"
             >
-              <span> Connect on LinkedIn </span>
+              <span>Connect on LinkedIn</span>
               <span>
                 <GrLinkedinOption />
               </span>
@@ -154,7 +171,7 @@ const Form = ({ className }) => {
               target="_blank"
               className="w-[60%] md:w-[80%] sm:w-full py-2 rounded-lg text-white bg-dark/80 flex items-center justify-center gap-2 hover:scale-105 duration-300 hover:shadow-2xl dark:border border-white dark:bg-dark/20"
             >
-              <span> Connect on Twitter</span>
+              <span>Connect on X</span>
               <span>
                 <RiTwitterXFill />
               </span>
@@ -164,7 +181,7 @@ const Form = ({ className }) => {
               target="_blank"
               className="w-[60%] md:w-[80%] sm:w-full py-2 rounded-lg text-white bg-gradient-to-r from-purple-400 to-pink-600 flex items-center justify-center gap-2 hover:scale-105 duration-300 hover:shadow-2xl"
             >
-              <span> Connect on Instagram </span>
+              <span>Connect on Instagram</span>
               <span className="">
                 <BiLogoInstagram />
               </span>

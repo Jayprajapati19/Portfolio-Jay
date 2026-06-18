@@ -122,8 +122,14 @@ const page = () => {
         <Layout className="pt-16 md:pt-8 sm:pd-4 xs:pt-2">
           <AnimatedText
             className="py-8 lg:text-7xl sm:text-6xl xs:text-4xl"
-            text="Imagination triumphs Knowledge !"
+            text="Projects built to solve real problems"
           />
+          <p className="mx-auto mb-16 max-w-4xl text-center text-lg font-medium leading-8 text-dark/75 dark:text-light/75 md:text-base">
+            A focused collection of full-stack, backend, real-time, and
+            AI-powered products. Each project is built around practical flows:
+            authentication, APIs, data, performance, and interfaces people can
+            understand quickly.
+          </p>
 
           <div className="grid grid-cols-12 gap-24 mb-10 xl:gap-x-16 lg:gap-x-8 sm:gap-x-0 md:gap-y-16">
             <div className="col-span-12">
@@ -152,7 +158,7 @@ const page = () => {
               <Project
                 title="AI CHAT APPLICATION"
                 link="https://github.com/Jayprajapati19/chatapp"
-                type="Featured Project"
+                type="AI Product"
                 img={pro3}
                 github="https://github.com/Jayprajapati19/chatapp"
               />
@@ -194,7 +200,7 @@ const page = () => {
               <Project
                 title="Newtube"
                 link="https://github.com/Jayprajapati19/newtube"
-                type="Featured Project"
+                type="Video Platform"
                 img={yt}
                 github="https://github.com/Jayprajapati19/newtube"
               />
@@ -204,7 +210,7 @@ const page = () => {
               <Project
                 title="Social Media"
                 link="https://linksta.vercel.app/"
-                type="Featured Project"
+                type="Social Platform"
                 img={linksta}
                 github="https://github.com/Jayprajapati19/social-media"
               />
@@ -213,10 +219,9 @@ const page = () => {
             <div className="col-span-12">
               <FeaturedProjects
                 title="Expense Tracker"
-                summary="Daily Expense Tracker"
+                summary="A practical expense tracking app for recording daily spending, reviewing transaction history, and keeping personal finances easier to understand."
                 link="https://expense-tracker-tau-topaz-48.vercel.app/"
-                type="Featured Project"
-                e
+                type="Finance Utility"
                 img={expenseTrack}
                 github="https://github.com/Jayprajapati19/expense-tracker"
               />
