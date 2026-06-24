@@ -40,7 +40,7 @@ export default function Home() {
                 <span className="text-xl font-semibold uppercase text-orange-500 sm:text-sm">
                   Full-stack developer
                 </span>
-                <span>Hello......,</span>
+                <span>Hello...</span>
                 <span>
                   I'm{" "}
                   <span className="text-orange-500 duration-200 ">

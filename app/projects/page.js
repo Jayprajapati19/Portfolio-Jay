@@ -14,6 +14,7 @@ import linksta from "../../public/linksta.png";
 import expenseTrack from "../../public/expense-track.png";
 import autoclaw from "../../public/autoclaw.png";
 import urlShortener from "../../public/url_short.png";
+import pptAi from "../../public/ppt-ai.png";
 import ArticlesPage from "../../components/ArticlesPage";
 import TransitionEffect from "../../components/TransitionEffect";
 export const metadata = {
@@ -183,6 +184,17 @@ const page = () => {
                 type="Featured Project"
                 img={urlShortener}
                 github="https://github.com/Jayprajapati19/URL-Shortener"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProjects
+                title="PPT Generator"
+                summary="Full-stack AI web app that turns plain text or notes into slide decks. Users describe the deck, choose style and tone, preview slides in the browser, present fullscreen, and download a .pptx file with titles, content, speaker notes, and image prompts."
+                link="https://github.com/Jayprajapati19/PPT-Generator"
+                type="AI Product"
+                img={pptAi}
+                github="https://github.com/Jayprajapati19/PPT-Generator"
               />
             </div>
 
